@@ -1,3 +1,4 @@
+/* ============================== App container ==============================*/
 .App {
     width: min(90%, 1250px);
     margin: 3rem auto;
@@ -6,6 +7,9 @@
     gap: 2rem;
 }
 
+
+
+/* ============================== General card ==============================*/
 .card {
     padding: 1.5rem 2rem;
     border-radius: 10px;
@@ -26,6 +30,9 @@
     line-height: 1.5;
 }
 
+
+
+/* ============================== Card background colors ==============================*/
 .purple-card {
     background-color: var(--moderate-violet);
     color: var(--white);
@@ -55,6 +62,8 @@
 }
 
 
+
+/* ============================== Media Q 768 ==============================*/
 @media (min-width: 768px) {
     .App {
         display: grid;
@@ -91,6 +100,9 @@
     }
 }
 
+
+
+/* ============================== Media Q 1250 ==============================*/
 @media (min-width: 1250px) {
     .App {
         margin: 7rem auto;
