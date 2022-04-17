@@ -1,0 +1,105 @@
+.App {
+    width: min(90%, 1250px);
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.card h1 {
+    font-size: 19px;
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: 1px;
+    margin: 0.9rem 0;
+}
+
+.card p {
+    opacity: 70%;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.purple-card {
+    background-color: var(--moderate-violet);
+    color: var(--white);
+    background-image: url(../Assets/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
+
+.dark-gray-card {
+    background-color: var(--very-dark-grayish-blue);
+    color: var(--white);
+}
+
+.white-tall-card {
+    background-color: var(--white);
+    color: var(--very-dark-blackish-blue);
+}
+
+.white-card {
+    background-color: var(--white);
+    color: var(--very-dark-blackish-blue);
+}
+
+.dark-blue-card {
+    background-color: var(--very-dark-blackish-blue);
+    color: var(--white);
+}
+
+
+@media (min-width: 768px) {
+    .App {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "daniel daniel jonathan"
+                             "jeanette kira kira"
+                             "patrick patrick patrick";
+        gap: 2rem;
+        margin: 5rem auto;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .purple-card {
+        grid-area: daniel;
+    }
+    
+    .dark-gray-card {
+        grid-area: jonathan;
+    }
+    
+    .white-tall-card {
+        grid-area: kira;
+    }
+    
+    .white-card {
+        grid-area: jeanette;
+    }
+    
+    .dark-blue-card {
+        grid-area: patrick;
+    }
+}
+
+@media (min-width: 1250px) {
+    .App {
+        margin: 7rem auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "daniel daniel jonathan kira"
+                             "jeanette patrick patrick kira";
+    }
+
+    .purple-card {
+        background-position-x: 80%;
+    }
+}

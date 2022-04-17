@@ -1,0 +1,21 @@
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.user-container img {
+    width: 30px;
+    border-radius: 50px;
+}
+
+.user-container h1 {
+    margin: 0 0 0.1rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.user-container h3 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 50%;
+}

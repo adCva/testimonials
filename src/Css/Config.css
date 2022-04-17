@@ -1,0 +1,19 @@
+* {
+    --white: #ffffff;
+    --light-gray: #cfcfcf;
+    --light-grayish-blue: #ecf2f8;
+    --moderate-violet: #7541c8;
+    --very-dark-grayish-blue: #48556a;
+    --very-dark-blackish-blue: #19212e;
+
+
+    --ff-main: 'Barlow Semi Condensed', sans-serif;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    font-family: var(--ff-main);
+    line-height: 1.3;
+}
